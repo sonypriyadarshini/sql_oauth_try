@@ -1,0 +1,96 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "2522",
+    "jobId" : "jobs/oauth_job",
+    "name" : "oauth_job",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "udVlGkHD96WOTQsOhA5Dd$$Xset_Uoo4PwetlEYIT-ER" : {
+      "id" : "udVlGkHD96WOTQsOhA5Dd$$Xset_Uoo4PwetlEYIT-ER",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -640,
+        "y" : -240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Zi3-6lmaOzr_HtUBhTvPB$$eP868EEeESIPFs8p6XM_e",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "XkQ0H8mfN9Xyd6X6h51bN$$1IgjM3wBDwZtEl_8-PFcD",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : "28105/.prophecy/metadata/sqlmodels/testmodel",
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "28105",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : "testmodel",
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "7524",
+        "gitEntityValue" : null,
+        "execDeps" : true,
+        "gitEntityValueCommit" : null,
+        "sqlProjectType" : "databricks",
+        "gitEntityValueBranch" : null,
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "testmodel",
+          "value" : "testmodel",
+          "id" : "28105/.prophecy/metadata/sqlmodels/testmodel",
+          "name" : "testmodel"
+        } ],
+        "entityKind" : "model"
+      }
+    }
+  },
+  "connections" : [ ]
+}

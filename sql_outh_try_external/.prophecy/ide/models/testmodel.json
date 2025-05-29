@@ -1,0 +1,85 @@
+{
+  "id" : "testmodel",
+  "metainfo" : {
+    "label" : "testmodel",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "testmodel##eo1Tm6BG" : {
+      "id" : "testmodel##eo1Tm6BG",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "testmodel",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM test112\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sK3Ma2do",
+          "slug" : "test112"
+        } ],
+        "outputs" : [ {
+          "id" : "Zt3ouUTG",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "YX7AiSeMR9Zqs6iWkLis8" : {
+      "id" : "YX7AiSeMR9Zqs6iWkLis8",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "test112",
+        "slug" : "test112",
+        "x" : -580,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "test112",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.sony",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "i4mBFJTQzxGoy_9SOnwSv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "eVvI_C47Ks5kY5VecvJpW",
+    "source" : "YX7AiSeMR9Zqs6iWkLis8",
+    "sourcePort" : "i4mBFJTQzxGoy_9SOnwSv",
+    "target" : "testmodel##eo1Tm6BG",
+    "targetPort" : "sK3Ma2do"
+  } ],
+  "component" : "Model"
+}
